@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    stages {
+        stage('git repo clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Pranathi99/TestProject-Frontend.git'
+            }
+        }
+        // stage('clean') {
+        //     steps {
+        //         bat "mvn clean"
+        //     }
+        // }
+        // stage('package') {
+        //     steps {
+        //         bat "mvn package"
+        //     }
+        // }
+        // stage('docker build') {
+        //     steps {
+        //         bat "docker build -t employee-management ."
+        //     }
+        // }
+        stage('docker compose build') {
+             steps {
+                 bat "docker-compose build"
+             }
+        }
+
+        stage('docker compose start') {
+             steps {
+                 bat "docker-compose up"
+             }
+        }
+    }
+}

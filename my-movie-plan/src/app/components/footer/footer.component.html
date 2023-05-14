@@ -1,0 +1,18 @@
+<footer
+  *ngIf="router.url !== '/select-seats'"
+  class="row w-100 justify-content-around mx-0 footer"
+  [ngClass]="fixed ? 'fixed-bottom' : ''"
+>
+  <div
+    class="text-center text-white"
+    style="height: 50px; line-height: 50px"
+    [ngClass]="{
+      'bg-dark': !bgColor,
+      bgColor: bgColor,
+      'text-white': !textColor,
+      textColor: textColor
+    }"
+  >
+   <span>&#169; Copyright, NMS Cinemas</span>
+  </div>
+</footer>

@@ -23,13 +23,13 @@ pipeline {
         // }
         stage('docker compose build') {
              steps {
-                 sh "docker-compose build"
+                 sh "docker build -t angular-my-movie-plan:1.0 -f Dockerfile ."
              }
         }
 
         stage('docker compose start') {
              steps {
-                 sh "docker-compose up"
+                 sh "docker run -d -p 4200:80 angular-my-movie-plan:1.0"
              }
         }
     }

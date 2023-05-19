@@ -4,5 +4,5 @@ services:
   angular-my-movie-plan:
     container_name: angular-my-movie-plan
     build:
-      context: ./TestProject-Frontend
-      dockerfile: .
+      context: .
+      dockerfile: Dockerfile

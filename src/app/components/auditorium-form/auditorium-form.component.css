@@ -3,7 +3,7 @@
     191deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(56, 9, 121, 1) 0%,
-    rgba(255, 0, 236, 1) 100%
+    rgb(230, 214, 228) 100%
   );
 }
 
@@ -40,7 +40,7 @@
 ::ng-deep
   .mat-form-field-appearance-outline.mat-focused
   .mat-form-field-outline-thick {
-  color: blueviolet !important;
+  color: rgb(147, 147, 148)  !important;
 }
 
 /* // mat-input error outline color */
@@ -73,7 +73,7 @@
 }
 /* // mat-label focused style */
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-  color: blueviolet !important;
+  color: rgb(147, 147, 148)  !important;
 }
 
 /* // mat-label error style */

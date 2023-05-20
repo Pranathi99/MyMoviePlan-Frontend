@@ -15,7 +15,7 @@ export class GlobalConstants {
 
     public static HALL_FACILITIES: string[] = ['MTicket', 'Wheel Chair Facility', 'Recliner Seats', 'Parking Facility', 'Food Court', 'Ticket Cancellation', 'f & B'];
 
-    public static ROOT_URL = 'http:/3.88.232.250:5555/my-movie-plan';
+    public static ROOT_URL = 'http://3.88.232.250:5555/my-movie-plan';
 
     public static REGISTER_URL = `${GlobalConstants.ROOT_URL}/user/sign-up`;
 

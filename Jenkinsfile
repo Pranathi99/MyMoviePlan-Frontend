@@ -21,11 +21,11 @@ pipeline {
         //         sh "docker build -t employee-management ."
         //     }
         // }
-        stage('docker compose build') {
-             steps {
-                 sh "docker build -t angular-my-movie-plan:1.0 -f Dockerfile ."
-             }
-        }
+        // stage('docker compose build') {
+        //      steps {
+        //          sh "docker build -t angular-my-movie-plan:1.0 -f Dockerfile ."
+        //      }
+        // }
 
         stage('docker compose start') {
              steps {
